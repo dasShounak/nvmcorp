@@ -14,15 +14,15 @@
   <body>
     <main class="bg-black text-white h-screen overflow-y-scroll snap-y snap-mandatory fixed w-full -z-20">
       <!-- * HERO -->
-      <section id="hero" class="snap-start snap-always bg-hero bg-cover bg-no-repeat h-screen">
+      <section id="hero" class="snap-start snap-always bg-hero bg-cover bg-center bg-no-repeat h-screen">
         <div id="hero_wrapper" class="h-full bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center">
-          <img src="img/nvm-0.png" alt="nvm" class="w-72 h-auto" />
-          <h2 class="text-2xl text-center transform translate-y-10">"Nevermind, it's just the beginning."</h2>
+          <img src="img/nvm-0.png" alt="nvm" class="w-40 sm:w-56 lg:w-72 h-auto" />
+          <h2 class="sm:text-xl lg:text-2xl text-center transform translate-y-10">"Nevermind, it's just the beginning."</h2>
         </div>
       </section>
       <!-- * DOMAINS -->
-      <section id="domains" class="snap-start snap-always h-screen flex flex-col justify-around items-center">
-        <div id="domains_wrapper" class="grid grid-cols-4 gap-20 max-w-7xl">
+      <section id="domains" class="snap-start snap-always h-screen flex flex-col justify-around items-center mt-20 md:mt-0">
+        <div id="domains_wrapper" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 max-w-7xl transform scale-90 sm:scale-100">
           <div id="domain_cybersec" class="space-y-6 text-center">
             <img src="icons/cybersec.png" alt="Cyber Security" id="domain_icon" class="h-36 mx-auto" />
             <h1 id="domain_title" class="font-heading text-2xl">Cyber Security</h1>
@@ -42,7 +42,7 @@
         </div>
       </section>
       <!-- * CTA -->
-      <section id="cta" class="snap-center snap-always h-[50vh] flex flex-col justify-around items-center max-w-6xl mx-auto">
+      <section id="cta" class="snap-center snap-always h-[50vh] flex flex-col justify-around items-center max-w-6xl mx-auto px-4 sm:px-8 md:pl-10 md:pr-4 lg:px-8 my-40 lg:my-auto">
         <div
           id="cta_card"
           class="
@@ -50,20 +50,21 @@
             w-full
             rounded-2xl
             relative
+            before:opacity-0 md:before:opacity-100
             before:content-[''] before:absolute before:-left-6 before:-top-6 before:w-full before:h-full before:border-8 before:border-violet-600 before:-z-10 before:rounded-2xl
           "
         >
-          <h1 class="text-violet-600 font-semibold text-3xl px-20 py-16">We are Recruiting!</h1>
-          <button id="cta_btn" class="absolute right-32 -bottom-5 transform scale-100 transition hover:scale-105 active:scale-100">
-            <a href="" class="font-heading text-3xl text-white bg-violet-600 px-8 pt-6 pb-3 rounded-xl">Join Us</a>
+          <h1 class="text-violet-600 font-semibold text-center md:text-left text-2xl lg:text-3xl px-10 md:px-20 py-16">We are Recruiting!</h1>
+          <button id="cta_btn" class="absolute translate-x-1/2 lg:translate-x-0 right-1/2 lg:right-32 -bottom-5 transform scale-100 transition hover:scale-105 active:scale-100">
+            <a href="" class="font-heading text-xl lg:text-3xl text-white bg-violet-600 px-8 pt-6 pb-3 rounded-xl">Join Us</a>
           </button>
         </div>
       </section>
       <!-- * ABOUT -->
-      <section id="about" class="snap-start snap-always h-screen grid grid-cols-2 gap-6 place-items-center max-w-7xl mx-auto">
-        <div id="about_text" class="ml-auto">
+      <section id="about" class="snap-start snap-always h-screen grid grid-cols-1 lg:grid-cols-2 gap-6 place-items-center max-w-7xl mx-auto px-4">
+        <div id="about_text" class="lg:ml-auto">
           <h1 class="font-heading text-2xl mb-4">about us</h1>
-          <p class="max-w-2xl text-xl leading-relaxed">
+          <p class="max-w-2xl text-lg sm:text-xl leading-relaxed">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio quia molestiae incidunt ipsam sequi aspernatur vel nisi error illo quae necessitatibus voluptate voluptates
             autem. Nisi temporibus fugiat quae vel eveniet consequuntur perspiciatis ullam atque, saepe hic placeat ut? Nihil laboriosam dolore doloremque sunt, dolor tenetur! Provident vitae,
             perspiciatis eligendi accusamus doloremque asperiores delectus illo officiis exercitationem id est dolore dolores porro, dolor suscipit assumenda similique. Vitae explicabo nam modi,
@@ -71,22 +72,22 @@
             maxime inventore suscipit consectetur, facilis dicta ducimus.
           </p>
         </div>
-        <div id="about_img" class="ml-auto">
-          <img src="img/about.svg" class="max-w-lg" />
+        <div id="about_img" class="lg:ml-auto mt-20 lg:mt-0">
+          <img src="img/about.svg" class="max-w-lg hidden sm:block" />
         </div>
       </section>
       <!-- * EVENTS -->
-      <section id="events" class="snap-center snap-always h-screen flex flex-col items-center justify-around">
+      <section id="events" class="snap-center snap-always h-auto md:h-screen mt-40 -mb-20 flex flex-col items-center justify-around">
         <h1 class="font-heading text-2xl mt-4">upcoming events</h1>
         <!-- Slider main container -->
-        <div class="swiper max-w-7xl py-20">
+        <div class="swiper max-w-xs sm:max-w-sm md:max-w-3xl lg:max-w-5xl xl:max-w-7xl py-20">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="img/event-1.jpg"></div>
-            <div class="swiper-slide"><img src="img/event-2.jpg"></div>
-            <div class="swiper-slide"><img src="img/event-3.jpg"></div>
-            <div class="swiper-slide"><img src="img/event-4.jpg"></div>
+            <div class="swiper-slide"><img src="img/event-1.jpg" class="mx-auto"></div>
+            <div class="swiper-slide"><img src="img/event-2.jpg" class="mx-auto"></div>
+            <div class="swiper-slide"><img src="img/event-3.jpg" class="mx-auto"></div>
+            <div class="swiper-slide"><img src="img/event-4.jpg" class="mx-auto"></div>
           </div>
 
           <!-- If we need navigation buttons -->
