@@ -4,8 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "SET NODE_ENV=development && postcss css/tailwind.css -o css/build.css -w",
-    "minify": "SET NODE_ENV=production && postcss -r css/build.css -u cssnano"
+    "dev:home": "SET NODE_ENV=development && postcss css/tailwind.css -o css/build.css -w",
+    "dev:domains": "SET NODE_ENV=development && postcss css/tailwind.css -o css/domains.css -w",
+    "dev:team": "SET NODE_ENV=development && postcss css/tailwind.css -o css/team.css -w",
+    "dev:events": "SET NODE_ENV=development && postcss css/tailwind.css -o css/events.css -w",
+    "dev:contact": "SET NODE_ENV=development && postcss css/tailwind.css -o css/contact.css -w",
+    "minify:home": "SET NODE_ENV=production && postcss -r css/build.css -u cssnano",
+    "minify:domains": "SET NODE_ENV=production && postcss -r css/domains.css -u cssnano",
+    "minify:team": "SET NODE_ENV=production && postcss -r css/team.css -u cssnano",
+    "minify:events": "SET NODE_ENV=production && postcss -r css/events.css -u cssnano",
+    "minify:contact": "SET NODE_ENV=production && postcss -r css/contact.css -u cssnano"
   },
   "keywords": [],
   "author": "Shounak Das",
