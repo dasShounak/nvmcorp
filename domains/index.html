@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
     <link rel="stylesheet" href="../css/domains.css" />
     <title>Nevermind Corp SRM | Domains</title>
-</head>
-<body class="bg-black text-white">
-    <!-- * HEADER -->
-    <header>
+  </head>
+  <body>
+    <main class="bg-black text-white h-screen overflow-y-auto fixed w-full">
+      <!-- * HEADER -->
+      <header>
         <nav class="flex flex-col sm:flex-row justify-between sm:items-center space-y-6 sm:space-y-0 px-4 md:px-8 py-4">
-            <div id="nav_logo">
-                <img src="../img/nvm-0.png" alt="Nevermind Corp SRM" class="h-10 w-auto">
-            </div>
-            <!-- * NAV LINKS -->
-            <ul class="flex  justify-between items-baseline space-x-4">
-                <li><a href="../" class="md:btn-underline-thin uppercase p-2 md:p-0">Home</a></li>
-                <li><a href="./" class="uppercase p-2 md:p-0 font-semibold cursor-not-allowed">Domains</a></li>
-                <li><a href="../team/" class="md:btn-underline-thin uppercase p-2 md:p-0">Team</a></li>
-                <li><a href="../events/" class="md:btn-underline-thin uppercase p-2 md:p-0">Events</a></li>
-                <li><a href="../contact/" class="md:btn-underline-thin uppercase p-2 md:p-0">Contact</a></li>
-            </ul>
+          <div id="nav_logo">
+            <img src="../img/nvm-0.png" alt="Nevermind Corp SRM" class="h-10 w-auto" />
+          </div>
+          <!-- * NAV LINKS -->
+          <ul class="flex justify-between items-baseline space-x-2 sm:space-x-4 text-sm sm:text-base">
+            <li><a href="../" class="md:btn-underline-thin uppercase p-2 md:p-0">Home</a></li>
+            <li><a href="./" class="uppercase p-2 md:p-0 font-semibold cursor-not-allowed">Domains</a></li>
+            <li><a href="../team/" class="md:btn-underline-thin uppercase p-2 md:p-0">Team</a></li>
+            <li><a href="../events/" class="md:btn-underline-thin uppercase p-2 md:p-0">Events</a></li>
+            <li><a href="../contact/" class="md:btn-underline-thin uppercase p-2 md:p-0">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-    <!-- * MAIN -->
-    <main class="mt-20 mb-80 px-4">
+      </header>
+      <!-- * MAIN -->
+      <div id="main" class="mt-20 mb-80 px-4">
         <h1 class="text-xl md:text-2xl text-center italic mb-20 md:mb-40">"We Learn. We Grow. We Achieve"</h1>
         <div id="domains" class="flex flex-col justify-between items-center space-y-28 md:space-y-40">
-            <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
-                <img src="../img/cybersec.svg" class="w-56 h-auto">
-                <div id="domain_card--text" class="text-center md:text-left max-w-lg md:ml-10">
-                    <h2 class="font-heading text-xl md:text-2xl mb-2">Cyber Security</h2>
-                    <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.</p>
-                </div>
-            </section>
-            <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
-                <img src="../img/webdev.svg" class="w-56 h-auto">
-                <div id="domain_card--text" class="text-center md:text-left max-w-lg md:order-first md:mr-10">
-                    <h2 class="font-heading text-xl md:text-2xl mb-2">Web Development</h2>
-                    <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.</p>
-                </div>
-            </section>
-            <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
-                <img src="../img/appdev.svg" class="w-56 h-auto">
-                <div id="domain_card--text" class="text-center md:text-left max-w-lg md:ml-10">
-                    <h2 class="font-heading text-xl md:text-2xl mb-2">App Development</h2>
-                    <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.</p>
-                </div>
-            </section>
-            <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
-                <img src="../img/compcode.svg" class="w-56 h-auto">
-                <div id="domain_card--text" class="text-center md:text-left max-w-lg md:order-first md:mr-10">
-                    <h2 class="font-heading text-xl md:text-2xl mb-2">Competitive Programming</h2>
-                    <p class="md:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.</p>
-                </div>
-            </section>
+          <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
+            <img src="../img/cybersec.svg" class="w-56 h-auto" />
+            <div id="domain_card--text" class="text-center md:text-left max-w-lg md:ml-10">
+              <h2 class="font-heading text-xl md:text-2xl mb-2">Cyber Security</h2>
+              <p class="md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio
+                doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.
+              </p>
+            </div>
+          </section>
+          <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
+            <img src="../img/webdev.svg" class="w-56 h-auto" />
+            <div id="domain_card--text" class="text-center md:text-left max-w-lg md:order-first md:mr-10">
+              <h2 class="font-heading text-xl md:text-2xl mb-2">Web Development</h2>
+              <p class="md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio
+                doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.
+              </p>
+            </div>
+          </section>
+          <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
+            <img src="../img/appdev.svg" class="w-56 h-auto" />
+            <div id="domain_card--text" class="text-center md:text-left max-w-lg md:ml-10">
+              <h2 class="font-heading text-xl md:text-2xl mb-2">App Development</h2>
+              <p class="md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio
+                doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.
+              </p>
+            </div>
+          </section>
+          <section id="domain_card" class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
+            <img src="../img/compcode.svg" class="w-56 h-auto" />
+            <div id="domain_card--text" class="text-center md:text-left max-w-lg md:order-first md:mr-10">
+              <h2 class="font-heading text-xl md:text-2xl mb-2">Competitive Programming</h2>
+              <p class="md:text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae doloremque ex, provident at neque earum praesentium adipisci consectetur delectus quia? At, illo. Nulla distinctio
+                doloribus, obcaecati deserunt ex fuga suscipit facilis, odio praesentium tenetur aut impedit neque nisi porro.
+              </p>
+            </div>
+          </section>
         </div>
-    </main>
-    <!-- * FOOTER -->
+      </div>
+      <!-- * FOOTER -->
       <footer class="snap-end snap-always mt-20 pt-16 pb-8 text-sm leading-6 bg-slate-800">
         <div class="max-w-7xl mx-auto divide-y divide-slate-700 px-4 sm:px-6 md:px-8">
           <div class="flex">
@@ -115,5 +128,6 @@
           <p class="text-center font-semibold text-slate-400">&copy; 2021 Nevermind Corp&trade; SRM. All Rights Reserved.</p>
         </div>
       </footer>
-</body>
+    </main>
+  </body>
 </html>

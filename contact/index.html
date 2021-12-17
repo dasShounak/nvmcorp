@@ -1,33 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
-    <link rel="stylesheet" href="../css/domains.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <title>Nevermind Corp SRM | Contact</title>
-</head>
-<body class="bg-black text-white">
-    <!-- * HEADER -->
-    <header>
+  </head>
+  <body>
+    <main class="bg-black text-white h-screen overflow-y-auto fixed w-full">
+      <!-- * HEADER -->
+      <header>
         <nav class="flex flex-col sm:flex-row justify-between sm:items-center space-y-6 sm:space-y-0 px-4 md:px-8 py-4">
-            <div id="nav-logo">
-                <img src="../img/nvm-0.png" alt="Nevermind Corp SRM" class="h-10 w-auto">
-            </div>
-            <!-- * NAV LINKS -->
-            <ul class="flex  justify-between items-baseline space-x-4">
-                <li><a href="../" class="md:btn-underline-thin uppercase p-2 md:p-0">Home</a></li>
-                <li><a href="../domains/" class="md:btn-underline-thin uppercase p-2 md:p-0">Domains</a></li>
-                <li><a href="../team/" class="md:btn-underline-thin uppercase p-2 md:p-0">Team</a></li>
-                <li><a href="../events/" class="md:btn-underline-thin uppercase p-2 md:p-0">Events</a></li>
-                <li><a href="./" class="uppercase p-2 md:p-0 font-semibold cursor-not-allowed">Contact</a></li>
-            </ul>
+          <div id="nav-logo">
+            <img src="../img/nvm-0.png" alt="Nevermind Corp SRM" class="h-10 w-auto" />
+          </div>
+          <!-- * NAV LINKS -->
+          <ul class="flex justify-between items-baseline space-x-2 sm:space-x-4 text-sm sm:text-base">
+            <li><a href="../" class="md:btn-underline-thin uppercase p-2 md:p-0">Home</a></li>
+            <li><a href="../domains/" class="md:btn-underline-thin uppercase p-2 md:p-0">Domains</a></li>
+            <li><a href="../team/" class="md:btn-underline-thin uppercase p-2 md:p-0">Team</a></li>
+            <li><a href="../events/" class="md:btn-underline-thin uppercase p-2 md:p-0">Events</a></li>
+            <li><a href="./" class="uppercase p-2 md:p-0 font-semibold cursor-not-allowed">Contact</a></li>
+          </ul>
         </nav>
-    </header>
-    <!-- * MAIN -->
-    <main></main>
-    <!-- * FOOTER -->
+      </header>
+      <!-- * MAIN -->
+      <div id="main" class="mt-20 mb-80 px-4">
+        <h1 class="text-xl md:text-2xl text-center italic mb-20 md:mb-40">"You've got questions. We've got answers."</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col max-w-2xl space-y-6 mx-auto">
+          <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+          <input type="hidden" name="apikey" value="8a806c9e-1ab3-48c3-b2f9-d6723c54e290" />
+
+          <!-- Optional: Subject an be prefilled using type="hidden" 
+       or type="text" for normal user submitted input -->
+          <input type="hidden" name="subject" value="New Submission from Website" />
+
+          <!-- Required: If submitting form without Javascript. 
+       Default web3forms output is in JSON format. -->
+          <!-- Not Required: If javascript, use "window.location.hash" instead -->
+          <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+
+          <!-- Optional: But Recommended: To Prevent SPAM Submission. 
+       Make sure its hidden by default -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+          <!-- Custom Form Data: Form data you wish to receive in email. -->
+          <!-- * name -->
+          <div id="form_name">
+            <label for="name" class="text-sm md:text-base uppercase font-semibold tracking-wider antialiased">Full Name<span class="text-slate-400"> *</span></label><br />
+            <input
+              type="text"
+              name="Full Name"
+              id="name"
+              class="
+                w-full
+                bg-black
+                border-2 border-opacity-40
+                rounded-md
+                px-4
+                py-2
+                focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 focus:border-opacity-100
+                transition
+                text-slate-300
+                mt-2
+                md:text-lg
+                uppercase
+              "
+              required
+            />
+          </div>
+          <!-- * email -->
+          <div id="form_email">
+            <label for="email" class="text-sm md:text-base uppercase font-semibold tracking-wider antialiased">Email<span class="text-slate-400"> *</span></label><br />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              class="
+                w-full
+                bg-black
+                border-2 border-opacity-40
+                rounded-md
+                px-4
+                py-2
+                focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 focus:border-opacity-100
+                transition
+                text-slate-300
+                mt-2
+                md:text-lg
+              "
+              required
+            />
+          </div>
+          <!-- * number -->
+          <div id="form_number">
+            <label for="number" class="text-sm md:text-base uppercase font-semibold tracking-wider antialiased">Phone Number<span class="text-slate-400"> *</span></label><br />
+            <input
+              type="text"
+              name="Phone Number"
+              id="number"
+              class="
+                w-full
+                bg-black
+                border-2 border-opacity-40
+                rounded-md
+                px-4
+                py-2
+                focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 focus:border-opacity-100
+                transition
+                text-slate-300
+                mt-2
+                md:text-lg
+              "
+              required
+            />
+          </div>
+          <!-- * message -->
+          <div id="form_message">
+            <label for="message" class="text-sm md:text-base uppercase font-semibold tracking-wider antialiased">Message<span class="text-slate-400"> *</span></label><br />
+            <textarea
+              name="Message"
+              id="message"
+              class="
+                w-full
+                bg-black
+                border-2 border-opacity-40
+                rounded-md
+                px-4
+                py-2
+                focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 focus:border-opacity-100
+                transition
+                text-slate-300
+                mt-2
+                md:text-lg
+              "
+              rows="8"
+              required
+            ></textarea>
+          </div>
+          <!-- * buttons -->
+          <div id="form_buttons" class="flex justify-between items-center w-full space-x-3">
+            <button type="submit" class="uppercase tracking-wider px-3 py-2 bg-transparent border-2 border-opacity-40 w-full hover:bg-gradient-to-r hover:from-slate-300 hover:to-white hover:text-black hover:border-slate-200 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 active:from-white active:to-slate-300 transition rounded-md">Submit</button>
+            <button type="reset" class="uppercase tracking-wider px-3 py-2 bg-transparent border-2 border-opacity-40 w-full hover:bg-gradient-to-r hover:from-slate-300 hover:to-white hover:text-black hover:border-slate-200 focus:outline-none focus:ring focus:ring-white focus:ring-opacity-40 active:from-white active:to-slate-300 transition rounded-md">Clear</button>
+          </div>
+        </form>
+      </div>
+      <!-- * FOOTER -->
       <footer class="snap-end snap-always mt-20 pt-16 pb-8 text-sm leading-6 bg-slate-800">
         <div class="max-w-7xl mx-auto divide-y divide-slate-700 px-4 sm:px-6 md:px-8">
           <div class="flex">
@@ -83,5 +203,6 @@
           <p class="text-center font-semibold text-slate-400">&copy; 2021 Nevermind Corp&trade; SRM. All Rights Reserved.</p>
         </div>
       </footer>
-</body>
+    </main>
+  </body>
 </html>
