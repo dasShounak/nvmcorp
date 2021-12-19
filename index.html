@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <script src="https://kit.fontawesome.com/0a41cee954.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/build.css" />
     <title>Nevermind Corp SRM | Home</title>
@@ -14,6 +15,19 @@
     <main class="bg-black text-white h-screen overflow-y-scroll lg:snap-y lg:snap-mandatory fixed w-full -z-20">
       <!-- * HERO -->
       <section id="hero" class="snap-start snap-always bg-hero bg-cover bg-center bg-no-repeat h-screen">
+        <nav class="flex flex-col sm:flex-row justify-between sm:items-center space-y-6 sm:space-y-0 px-4 md:px-8 py-4">
+          <div id="nav_logo">
+            <img src="../img/nvm-0.png" alt="Nevermind Corp SRM" class="h-10 w-auto" />
+          </div>
+          <!-- * NAV LINKS -->
+          <ul class="flex justify-between items-baseline space-x-2 sm:space-x-4 text-sm sm:text-base">
+            <li><a href="./domains/" class="uppercase p-2 md:p-0 font-semibold cursor-not-allowed">Home</a></li>
+            <li><a href="./domains/" class="md:btn-underline-thin uppercase p-2 md:p-0">Domains</a></li>
+            <li><a href="./team/" class="md:btn-underline-thin uppercase p-2 md:p-0">Team</a></li>
+            <li><a href="./events/" class="md:btn-underline-thin uppercase p-2 md:p-0">Events</a></li>
+            <li><a href="./contact/" class="md:btn-underline-thin uppercase p-2 md:p-0">Contact</a></li>
+          </ul>
+        </nav>
         <div id="hero_wrapper" class="h-full bg-gradient-to-t from-black to-transparent flex flex-col justify-center items-center">
           <img src="img/nvm-0.png" alt="nvm" class="w-40 sm:w-56 lg:w-72 h-auto" />
           <h2 class="sm:text-xl lg:text-2xl text-center transform translate-y-10 italic">"Nevermind, it's just the beginning."</h2>
