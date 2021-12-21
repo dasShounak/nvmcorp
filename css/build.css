@@ -994,105 +994,131 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
 }
+
 .before\:-left-6::before {
   content: var(--tw-content);
   left: -1.5rem;
 }
+
 .before\:-top-6::before {
   content: var(--tw-content);
   top: -1.5rem;
 }
+
 .before\:-z-10::before {
   content: var(--tw-content);
   z-index: -10;
 }
+
 .before\:h-full::before {
   content: var(--tw-content);
   height: 100%;
 }
+
 .before\:w-full::before {
   content: var(--tw-content);
   width: 100%;
 }
+
 .before\:rounded-2xl::before {
   content: var(--tw-content);
   border-radius: 1rem;
 }
+
 .before\:border-8::before {
   content: var(--tw-content);
   border-width: 8px;
 }
+
 .before\:border-violet-600::before {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(124 58 237 / var(--tw-border-opacity));
 }
+
 .before\:opacity-0::before {
   content: var(--tw-content);
   opacity: 0;
 }
+
 .before\:content-\[\'\'\]::before {
   --tw-content: '';
   content: var(--tw-content);
 }
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: var(--tw-transform);
 }
+
 .hover\:border-slate-200:hover {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
 }
+
 .hover\:bg-gradient-to-r:hover {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+
 .hover\:from-slate-300:hover {
   --tw-gradient-from: #cbd5e1;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(203 213 225 / 0));
 }
+
 .hover\:to-white:hover {
   --tw-gradient-to: #fff;
 }
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
+
 .focus\:border-opacity-100:focus {
   --tw-border-opacity: 1;
 }
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 .focus\:ring:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
+
 .focus\:ring-white:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
 }
+
 .focus\:ring-opacity-40:focus {
   --tw-ring-opacity: 0.4;
 }
+
 .active\:scale-100:active {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: var(--tw-transform);
 }
+
 .active\:from-white:active {
   --tw-gradient-from: #fff;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 255 255 / 0));
 }
+
 .active\:to-slate-300:active {
   --tw-gradient-to: #cbd5e1;
 }
+
 @media (min-width: 640px) {
 
   .sm\:block {
@@ -1178,6 +1204,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:btn-underline-thin {
@@ -1336,6 +1363,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     opacity: 1;
   }
 }
+
 @media (min-width: 1024px) {
 
   .lg\:right-32 {
@@ -1418,6 +1446,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 }
+
 @media (min-width: 1280px) {
 
   .xl\:max-w-7xl {
