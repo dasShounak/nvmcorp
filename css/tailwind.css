@@ -110,6 +110,6 @@
   }
 
   #cta-card button > a:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 -10px 40px -10px rgba(124, 58, 237, 0.6);
   }
 }
