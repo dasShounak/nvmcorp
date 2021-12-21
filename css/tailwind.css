@@ -53,6 +53,10 @@
     background: white;
     border-radius: 10px;
   }
+
+  a {
+    @apply focus:outline-none;
+  }
 }
 
 @layer components {
